@@ -22,7 +22,7 @@ public class GridLayoutActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid_layout);
-        mBtnRefresh = (Button) findViewById(R.id.btn_refresh);
+        mBtnRefresh = findViewById(R.id.btn_refresh);
         mGl = findViewById(R.id.gl);
         View view1 = getLayoutInflater().inflate(R.layout.item_new_car_home, mGl, false);
         final View view2 = getLayoutInflater().inflate(R.layout.item_new_car_home, mGl, false);
